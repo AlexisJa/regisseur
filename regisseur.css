@@ -1,3 +1,16 @@
+.container{
+  width:100%;
+    background-color: #dd0000;
+
+}
+.jumbotron{
+    margin: 0 auto;
+    max-width:1200px;
+    background-color: #dd0000;
+    color: white;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    height: 250px;
+}
 body {
   position: relative;
 }
@@ -7,15 +20,18 @@ body {
   z-index: 9999 !important;
 }
 .navbar {
-  margin-bottom: 0px;
+    margin-bottom: 0;
+    border-radius: 0;
 }
-
 .affix ~ .container-fluid {
  position: relative;
  top: 50px;
 }
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+.PageDiv{
+    max-width: 1200px;
+    background-color: #eeeeee;
+    min-height: 500px;
+}
+.PageDiv:nth-child(even){
+    background-color: #dddddd;
+}
