@@ -1,0 +1,36 @@
+<p> blah blah j'espere que personne est mort pis que le Cayen s'est pas fait frapper au Shack blah blah <br>
+    Voici des photos pour en garder des souvenirs, surtout pour ceux qui ne s'en souviennent déjà plus.
+</p>
+<div ng-controller="CarouselCtrl" ng-init="init('http://i.imgur.com/',
+[
+['bwa8C4r.jpg','grosse torche 1'],
+['4rm3Jw0.jpg','grosse torche 2'],
+['eWEsWtK.jpg','vieux pauvre'],
+['QsZwdaw.jpg','BACK BOOBS'],
+])">
+    <div id="CarouselInitiation" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+
+      <ol class="carousel-indicators">
+        <li ng-repeat="photo in photos" data-target="#CarouselInitiation" data-slide-to="{{ $index }}" ng-class="$index==0 ? 'active' : ''"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+          <div class="item" ng-repeat="photo in photos" ng-class="$index==0 ? 'active' : ''">
+                <img ng-src="{{ photo.src }}" ng-alt="photo.caption">
+            <div class="carousel-caption">
+                <p>{{ photo.caption }}</p>
+            </div>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#CarouselInitiation" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#CarouselInitiation" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>

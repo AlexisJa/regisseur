@@ -46,7 +46,30 @@ body {
     background-color: #dddddd;
 }
 .roundImage{
-    height:50px;
-    border-radius: 25px;
-    border: 2px #dd0000;
+    height:300px;
+    border-radius: 150px;
+    border: 10px solid #dd0000;
+    transition: 0.5s;
+}
+.roundImage:hover{
+    border: 0 solid #dd0000;
+}
+.face{
+    text-align: center;
+}
+.face>img{
+    height:100px;
+    border-radius: 50px;
+    border: 6px solid #dd0000;
+    transition: 0.5s;
+}
+.face>img:hover{
+    border: 0 solid #dd0000;
+}
+.pageTitle{
+    font-weight: 900;
+    color: #dd0000;
+}
+.carousel-inner > .item > img{
+    margin: 0 auto;
 }

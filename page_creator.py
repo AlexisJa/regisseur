@@ -59,7 +59,7 @@ class PageCreator:
 
     def _wrap_page(self, number, title, file_content):
         return '''<div id="section{number}" class="container-fluid PageDiv">
-        <h2>{title}</h2>
+        <h2 class="pageTitle">{title}</h2>
         {content}</div>'''.format(number=number, content=file_content, title=title)
 
     def _wrap_file(self):
@@ -83,6 +83,11 @@ if __name__ == '__main__':
     p = PageCreator()
     p.page_list = [
         Page('r1/new_regisseur.html', 'Bonne rentrée!'),
+        Page('r1/exec.html', 'Votre Exécutif'),
+        Page('r1/init.html', 'Initiation'),
+        Page('r1/projets.html', 'Projets étudiants'),
+        Page('r1/evenements.html', 'Événements à venir'),
+
         # Page('r0/p2.html', 'Page 2'),
         # Page('r0/p2.html', 'Page 3'),
         # Page('r0/p1.html', 'Page 4'),
