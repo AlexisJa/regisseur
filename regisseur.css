@@ -73,3 +73,13 @@ body {
 .carousel-inner > .item > img{
     margin: 0 auto;
 }
+.bouscotte{
+    display: block;
+    margin: 0 auto;
+    border-radius: 200px;
+    border: 10px solid #dd0000;
+    transition: 4s;
+}
+.bouscotte:hover{
+    transform:rotate(1080deg)
+}
