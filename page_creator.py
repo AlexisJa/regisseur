@@ -19,8 +19,8 @@ class NavBar:
         return '''
         <div class="container">
             <div class="jumbotron">
-                <h1>Le Régisseur</h1>
-                <h4>Le journal étudiant du Regroupement des Étudiants de Génie Informatique et Électrique</h4>
+                <h1>Régisseur</h1>
+                <h4>Le journal étudiant du Regroupement des Étudiants <br> de Génie Informatique et Électrique</h4>
                 <h5>Volume {vol} - Édition {edition}</h5>
             </div>
         </div>
@@ -35,8 +35,8 @@ class Page:
 
 class PageCreator:
     def __init__(self, *args, **kwargs):
-        self.volume = 0
-        self.date = '2016-07-11'
+        self.volume = 1
+        self.date = "Rentrée automne 2016"
         self.output_file = 'regisseur{}.html'.format(self.volume)
         self.title_div = ''
         self.body = ''

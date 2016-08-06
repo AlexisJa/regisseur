@@ -2,6 +2,7 @@
   width:100%;
     background-color: #dd0000;
 
+
 }
 .jumbotron{
     margin: 0 auto;
@@ -10,10 +11,18 @@
     color: white;
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
     height: 250px;
-    background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/master/pic/regie_noir.png")
+    background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/86b9db9e8f6188eb5a39f7c80a2d07267f026d6e/pic/regie_noir.png");
+    background-size: 790px 350px;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+
 }
 body {
   position: relative;
+    /*font-family: ;*/
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+
 }
 .affix {
   top:0;
@@ -35,4 +44,9 @@ body {
 }
 .PageDiv:nth-child(even){
     background-color: #dddddd;
+}
+.roundImage{
+    height:50px;
+    border-radius: 25px;
+    border: 2px #dd0000;
 }
