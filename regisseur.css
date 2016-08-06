@@ -10,6 +10,7 @@
     color: white;
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
     height: 250px;
+    background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/master/pic/regie_noir.png")
 }
 body {
   position: relative;
