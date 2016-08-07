@@ -52,7 +52,7 @@ body {
     transition: 0.5s;
 }
 .roundImage:hover{
-    border: 0 solid #dd0000;
+    border: 1px solid #dd0000;
 }
 .face{
     text-align: center;
@@ -64,7 +64,19 @@ body {
     transition: 0.5s;
 }
 .face>img:hover{
-    border: 0 solid #dd0000;
+    border: 1px solid #dd0000;
+}
+.projet{
+    text-align: center;
+}
+.projet>img{
+    height:200px;
+    border-radius: 100px;
+    border: 6px solid #dd0000;
+    transition: 0.5s;
+}
+.projet>img:hover{
+    border: 1px solid #dd0000;
 }
 .pageTitle{
     font-weight: 900;
