@@ -19,10 +19,9 @@
 
 }
 body {
-  position: relative;
-    /*font-family: ;*/
+    position: relative;
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
-
+    background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/86b9db9e8f6188eb5a39f7c80a2d07267f026d6e/pic/circuit.jpg");
 }
 .affix {
   top:0;
