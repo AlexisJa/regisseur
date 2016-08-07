@@ -71,6 +71,7 @@ body {
 }
 .projet>img{
     height:200px;
+    width:200px;
     border-radius: 100px;
     border: 6px solid #dd0000;
     transition: 0.5s;
