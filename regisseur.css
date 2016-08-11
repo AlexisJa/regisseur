@@ -44,9 +44,17 @@ body {
 .PageDiv:nth-child(even){
     background-color: #dddddd;
 }
+.redBorder{
+    border: 10px solid #dd0000;
+    transition: 0.5s;
+
+}
+.redBorder:hover{
+    border: 1px solid #dd0000;
+}
 .roundImage{
     height:300px;
-    border-radius: 150px;
+    border-radius: 50%;
     border: 10px solid #dd0000;
     transition: 0.5s;
 }
@@ -58,7 +66,7 @@ body {
 }
 .face>img{
     height:100px;
-    border-radius: 50px;
+    border-radius: 50%;
     border: 6px solid #dd0000;
     transition: 0.5s;
 }
@@ -71,7 +79,7 @@ body {
 .projet>img{
     height:200px;
     width:200px;
-    border-radius: 100px;
+    border-radius: 50%;
     border: 6px solid #dd0000;
     transition: 0.5s;
 }
@@ -90,8 +98,8 @@ body {
     margin: 0 auto;
     border-radius: 200px;
     border: 10px solid #dd0000;
-    transition: 4s;
+    transition: 32s;
 }
 .bouscotte:hover{
-    transform:rotate(1080deg)
+    transform:rotate(8640deg)
 }
