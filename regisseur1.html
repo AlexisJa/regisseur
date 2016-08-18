@@ -229,10 +229,10 @@ ng_reg.controller('CarouselCtrl', function($scope){
 
 <h4><span class="face"><img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/guedaille.jpg"></span>
     <strong>Gabrielle Desrochers</strong> alias Guedaille - <i>Trésorière</i> - gabrielle.desrochers.1@ulaval.ca </h4>
-<p>
-    J'AI PAS ENCORE ENVOYÉ MON TEXTE ET SI JE L'AI PAS ENVOYÉ AVANT LA DATA LIMITE LE RÉGISSEUR VA PARAÎTRE AVEC
-    CE PLACEHOLDER LÀ ET JE VAIS AVOIR L'AIR KEUNE
-</p>
+<div style="width:100%; text-align: center;">
+    <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/guedaille_texte.png">
+</div>
+<p><i>Note de l'éditeur: Non c'est correct, j'ai tout ce qu'il me faut...</i></p>
 
 <h4><span class="face"><img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/cayen.jpg"></span>
     <strong>Matthieu Sylvain</strong> alias Le Cayen - <i>VP exécutif</i> - matthieu.sylvain.1@ulaval.ca </h4>
@@ -253,20 +253,14 @@ ng_reg.controller('CarouselCtrl', function($scope){
 <table width="100%" style="text-align: center; align-content: center;">
     <tr>
         <td width="33%">
-            <!--<div style="text-align:center; padding: 0 0 25px 0;">-->
                 <img class="roundImage" src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/cayen2.jpg">
-            <!--</div>-->
         </td>
         <td width="33%">
 
-            <!--<div style="text-align:center; padding: 0 0 25px 0;">-->
                 <img class="roundImage" src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/cayen5.jpg">
-            <!--</div>-->
         </td>
-        <td width="33%" style="backgound-color:pink;">
-            <!--<div style="text-align:center; padding: 0 0 25px 0;">-->
+        <td width="33%">
                 <img class="roundImage fall" src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/cayen4.jpg">
-            <!--</div>-->
         </td>
     </tr>
 
@@ -356,8 +350,12 @@ ng_reg.controller('CarouselCtrl', function($scope){
 <h4><span class="face"><img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/bouscotte.jpg"></span>
     <strong>Julien Morissette</strong> alias BOUSCOTTE - <i>VP web</i> - julien.morissette.1@ulaval.ca </h4>
 <p>
-    J'AI PAS ENCORE ENVOYÉ MON TEXTE ET SI JE L'AI PAS ENVOYÉ AVANT LA DATA LIMITE LE RÉGISSEUR VA PARAÎTRE AVEC
-    CE PLACEHOLDER LÀ ET JE VAIS AVOIR L'AIR CAVE
+    Hey, people, je me présente, Julien "BOUSCOTTE" Morissette, c'est moi qui a le plaisir d'être votre VP web pour
+    l'année. Ma tâche consiste à mettre à jour le site avec toutes infos pertinentes pour vous et de m'assurer que la
+    banque d'examens est fonctionnelle lorsque vous en avez besoin (genre la veille d'un examen que vous commencez tout
+    juste l'étude). <br><br>
+    N'hésitez pas à venir me voir si vous avez des suggestions pour améliorer le site ou juste pour parler de
+    programmation en général. Profitez bien de votre temps à l'université ça passe trop vite ;).
 </p>
 <video class="bouscotte" width="400px" height="400px" autoplay loop>
     <source src="https://img.buzzfeed.com/buzzfeed-static/static/2014-10/3/18/enhanced/webdr05/anigif_enhanced-23241-1412376195-1.gif?output-format=mp4">
@@ -451,9 +449,27 @@ ng_reg.controller('CarouselCtrl', function($scope){
     postérité, et c'est aussi une bonne façon de commencer sa course des Jeux du bon pied! <br>
     <h5><strong>FAITES LES JEUX!</strong></h5>
 
+</p>
+
+
+<h4><strong>Autres</strong></h4>
+<p>
+    Plusieurs autres projets étudiants s'adressant aux étudiants de GELGIF existent, mais ils étaient trop cool pour
+    nous envoyer un texte. Tout de même, en voici une liste peu exhaustive.
+</p>
+<ul>
+    <li>GAUL - Ils font des fusées</li>
+    <li>BAJA SAE - Ils font des chars qui vont dans la bouette</li>
+    <li>Formule SAE - Ils font des chars qui vont vite vite</li>
+    <li>Alérion Supermileage - Ils font des chars qui boivent moins que Goup avant un examen de C++</li>
+</ul>
+<p>
+    De plus, pour le Festival, on fait à chaque année une belle machine de casino, ce qui demande des bras, des idées et
+    des GELGIF assoiffés de faire des apprentissages. Prier à Jésus pour des détails.
 </p></div><div id="section4" class="container-fluid PageDiv">
         <h2 class="pageTitle">Événements à venir</h2>
-        <h2>- Course des Jeux de Génie</h2>
+        <h4><span class="projet"><img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/jdg.jpg"></span>
+    <strong>Course des Jeux de Génie</strong></h4>
 <p>
     Les Jeux de Génie, c'est une compétition plus qu'amicale entre toutes les facultés de Génie au Québec. 44 délégués
     auront la chance, du 3 au 7 janvier prochain, de représenter l'Université Laval lors des nombreuses épreuves qui se
@@ -479,14 +495,40 @@ ng_reg.controller('CarouselCtrl', function($scope){
     En plus j'ai déjà averti l'Exec des Jeux que GELGIF allait être EN FEU lors de cette course, alors ne me faites pas
     mentir svp.
 </p>
-<h3>TL:DR; FAITES LES JEUX!</h3>
-<h2>- Festival de Sciences et Génie</h2>
+<h6>TL:DR; FAITES LES JEUX!</h6>
+
+<h4><span class="projet"><img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/csgames.png">
+    <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r1/pics/cslaval.png"></span>
+    <strong>CS Games - délégation ULaval</strong></h4>
+<p>
+    Hey toi, t'aimes la programmation? T'aimes relever des défis? T'as le goût de te dépasser? Et surtout t'as le gout
+    de triper une fin de semaine avec pleins de passionnés d'informatique? Et bien, les CS Games sont pour toi. <br><br>
+    Les CS Games, c'est une compétition interuniversitaire regroupant plusieurs universités d'Amérique du Nord et
+    composée d'épreuves touchant différents domaines de l'informatique. L'an dernier, l'université Laval a envoyé un
+    total de 20 personnes participer à la compétition et nous avons obtenu une 3e place en algorithmie ainsi que deux
+    deuxième place en intelligence artificielle et en ingénierie logicielle. <br><br>
+    En attendant l'édition 2017, on prévoit faire comme l'an passé et organiser des conférences sur divers sujets ainsi
+    que quelques compétitions amicales afin de s'entrainer. La compétition n'est pas réservée seulement au gens de
+    IFT/GLO et j'espère voir quelques représentants de GEL/GIF se joindre à moi. <br><br>
+    Bienvenue à tous et pour plus de détails surveillez la séance d'information qui devrait avoir lieu dans les
+    2-3 premières semaines de la session où venez me jaser directement. <br><br>
+     - Julien "Bouscotte" Morissette.
+</p>
+<h4>- Festival de Sciences et Génie</h4>
 <p>
     Le Président du 42e Festival de Sciences et Génie est supposé vous faire un texte éventuellement. Mais il est un
     peu YOLO de nature alors ça va arriver plus tard. Pas de stress, c'est juste au début de la session d'Hiver. Tout ce
     que ça prend en ce moment, c'est une duchesse autant sua'coche que Clara l'an dernier.
 </p>
-<h2>- Tout au long de l'année</h2>
+<h4>- Compétition Québécoise d'Ingénierie</h4>
+<p>
+    Ça aussi c'est juste dans une session, mais allez consulter <a href="http://cqi-qec.qc.ca/2017/fr/">leur site</a>
+    pour voir ce dont il s'agit. C'est à Rimouski cette année, j'ai vraiment trop hâte. L'an dernier, notre université
+    a, comment dire... vraiment bien performé, donc, qui sait, peut-être auras-tu toi aussi la chance de franchir cette
+    étape et te rendre à la Compétition Canadienne d'Ingénierie à Calgary afin d'y répandre
+    <strike>l'Excellence</strike> tes beaux talents...
+</p>
+<h4>- Tout au long de l'année</h4>
 <p>
     Au RÉGIÉ, vous avez toujours accès à notre merveilleuse table de Babyfoot, 24/7. De plus, on a un tout nouveau setup
     de Project M, merci à notre délicieux président pour son travail acharné cet été.
