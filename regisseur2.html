@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Régisseur</title>
+    <link rel="icon" href="https://cdn.rawgit.com/AlexisJa/regisseur/master/pic/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<style>
+    .container{
+  width:100%;
+    background-color: #dd0000;
+
+
+}
+.jumbotron{
+    margin: 0 auto;
+    max-width:1200px;
+    background-color: #dd0000;
+    color: white;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    height: 250px;
+    background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/86b9db9e8f6188eb5a39f7c80a2d07267f026d6e/pic/regie_noir.png");
+    background-size: 790px 350px;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+
+}
+body {
+    position: relative;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/master/pic/circuit2.jpg");
+}
+.affix {
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.affix ~ .container-fluid {
+ position: relative;
+ top: 50px;
+}
+.PageDiv{
+    max-width: 1200px;
+    background-color: #eeeeee;
+    min-height: 500px;
+}
+.PageDiv:nth-child(even){
+    background-color: #dddddd;
+}
+.redBorder{
+    border: 10px solid #dd0000;
+    transition: 0.5s;
+
+}
+.redBorder:hover{
+    border: 1px solid #dd0000;
+}
+.roundImage{
+    height:300px;
+    border-radius: 50%;
+    border: 10px solid #dd0000;
+    transition: 0.5s;
+}
+.roundImage:hover{
+    border: 1px solid #dd0000;
+}
+.face{
+    text-align: center;
+}
+.face>img{
+    height:100px;
+    border-radius: 50%;
+    border: 6px solid #dd0000;
+    transition: 0.5s;
+}
+.face>img:hover{
+    border: 1px solid #dd0000;
+}
+.projet{
+    text-align: center;
+}
+.projet>img{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    border: 6px solid #dd0000;
+    transition: 0.5s;
+}
+.projet>img:hover{
+    border: 1px solid #dd0000;
+}
+.pageTitle{
+    font-weight: 900;
+    color: #dd0000;
+}
+.carousel-inner > .item > img{
+    margin: 0 auto;
+}
+.fall:hover{
+    transform:rotate(-110deg)
+}
+.bouscotte{
+    display: block;
+    margin: 0 auto;
+    border-radius: 200px;
+    border: 10px solid #dd0000;
+    transition: 32s;
+}
+.bouscotte:hover{
+    transform:rotate(8640deg)
+}
+</style>
+<script>
+    var ng_reg = angular.module("regisseur", []);
+
+ng_reg.controller('CarouselCtrl', function($scope){
+    $scope.photos = [];
+    $scope.clicked = function(){
+
+    };
+    $scope.init = function(location, caption_dict, pic_number){
+        $scope.photos = [];
+        for (var i = 1; i<pic_number; i++){
+            var caption = '';
+            $scope.photos.push({src: location + i+'.jpg', caption: caption});
+        }
+    }
+});
+</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" ng-app="regisseur">
+
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Régisseur</h1>
+                <h4>Le journal étudiant du Regroupement des Étudiants <br> de Génie Informatique et Électrique</h4>
+                <h5>Volume 2 - Édition Mi-session automne 2016</h5>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+        <ul class="nav navbar-nav"><li><a href="#section0">Attention!</a></li><li><a href="#section1">VP première année</a></li><li><a href="#section2">Waurte du mois</a></li><li><a href="#section3">Règles du Smash</a></li><li><a href="#section4">Éditorial</a></li><li><a href="#section5">Poésie</a></li><li><a href="#section6">Arbre en arbre</a></li><li><a href="#section7">Pub Crawl</a></li><li><a href="#section8">Course JDG</a></li><li><a href="#section9">Festival</a></li></ul></nav>
+<div id="section0" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Attention!</h2>
+        <h3>
+    ATTENTION! ANNONCE DE SANTÉ PUBLIQUE!
+</h3>
+<p>
+    Une épidémie de « beignage » a récemment pollué le mur Facebook du RÉGIÉ. Pour ceux qui ne sont pas familiers avec la
+    maladie, les scientifiques s'entendent pour dire qu'elle est originaire de certaines compagnies privées voulant
+    protéger leur confidentialité. Celles-ci ont des concours entre employés où les postes de travail laissés sans
+    surveillance peuvent être utilisés pour « beigner » leur propriétaire. En effet, si un autre employé réussit à se
+    connecter au courriel interne de la compagnie et à envoyer un mail au nom de la victime disant «Je dois des beignes
+    à tout le monde!», la victime doit apporter des beignes à toute l'équipe. <br>
+    Malheureusement, l'épidémie s'est propagée dans notre belle communauté et a malheureusement atteint le statut de <i>
+    Picardus Desagreabilis</i>, mieux connu sous nom de « cancer ». Il est donc maintenant temps pour nous tous de nous
+    prémunir contre cette maladie. <br>
+    Pour vous protéger, le port du condom est recommandé, mais son taux d'efficacité n'est pas encore bien connu. Il est
+    donc plus simple de prendre l'habitude d'utiliser WINDOWS+L, CTRL+ALT+L ou
+    POMME+WHATEVERELSETHATREPLACESESCAPEBUTTONONTHENEWMACBOOKS dépendemment de votre système d'exploitation. Si vous
+    utilisez un ordinateur du RÉGIÉ, ça a l'air que vous ne pouvez pas vérouiller votre session, notre suggestion serait
+    donc de ne jamais vous lever.
+    <br>
+    Si vous voyez un ordinateur sans surveillance, une victime vulnérable, sans défense, à votre merci, dites non à la
+    culture du viol et laissez-le tranquille, #sansOuiC'estNon. Si votre envie de troller est trop importante, on vous
+    suggère de faire un bon vieux facebook rape et de faire un simple statut disant «Lol!!, je suis gai!!!!1! XD XD».
+    <br>
+    Ensemble, gardons notre page du RÉGIÉ <strike>propre</strike> un peu moins sale!
+</p>
+</div><div id="section1" class="container-fluid PageDiv">
+        <h2 class="pageTitle">VP première année</h2>
+        </div><div id="section2" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Waurte du mois</h2>
+        </div><div id="section3" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Règles du Smash</h2>
+        </div><div id="section4" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Éditorial</h2>
+        </div><div id="section5" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Poésie</h2>
+        </div><div id="section6" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Arbre en arbre</h2>
+        <p> Notre valeureux VP-Sports nous a organisé une belle sortie de famille à Sarbayä.
+    On s'est fait des bras, on a sué dans la pluie, on a eu du plasir, et on a eu de la bière gratis à la Voie Maltée.
+    Merci Jay! <span class="glyphicon glyphicon-heart"></span>
+</p>
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/tree.jpg">
+</div><div id="section7" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Pub Crawl</h2>
+        </div><div id="section8" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Course JDG</h2>
+        </div><div id="section9" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Festival</h2>
+        </div>
+</body>
+</html>

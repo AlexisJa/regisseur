@@ -35,8 +35,8 @@ class Page:
 
 class PageCreator:
     def __init__(self, *args, **kwargs):
-        self.volume = 1
-        self.date = "Rentrée automne 2016"
+        self.volume = 2
+        self.date = "Mi-session automne 2016"
         self.output_file = 'regisseur{}.html'.format(self.volume)
         self.title_div = ''
         self.body = ''
@@ -44,7 +44,6 @@ class PageCreator:
         self.style_appends = ''
         self.page_list = []
         self.host = "https://cdn.rawgit.com/AlexisJa/regisseur/master/"
-        self.commit_id = ''
 
     def render(self):
         for i in range(len(self.page_list)):
@@ -82,21 +81,16 @@ class PageCreator:
 if __name__ == '__main__':
     p = PageCreator()
     p.page_list = [
-        Page('r1/new_regisseur.html', 'Bonne rentrée!'),
-        Page('r1/exec.html', 'Votre Exécutif'),
-        Page('r1/init.html', 'Initiation'),
-        Page('r1/projets.html', 'Projets étudiants'),
-        Page('r1/evenements.html', 'Événements à venir'),
-
-        # Page('r0/p2.html', 'Page 2'),
-        # Page('r0/p2.html', 'Page 3'),
-        # Page('r0/p1.html', 'Page 4'),
-        # Page('r0/p1.html', 'Page 5'),
-        # Page('r0/p1.html', 'Page 1'),
-        # Page('r0/p2.html', 'Page 2'),
-        # Page('r0/p2.html', 'Page 3'),
-        # Page('r0/p1.html', 'Page 4'),
-        # Page('r0/p1.html', 'Page 5'),
+        Page('r2/beignes.html', 'Attention!'),
+        Page('r2/vp1.html', 'VP première année'),
+        Page('r2/waurte.html', 'Waurte du mois'),
+        Page('r2/smash.html', 'Règles du Smash'),
+        Page('r2/editorial.html', 'Éditorial'),
+        Page('r2/poeme.html', 'Poésie'),
+        Page('r2/arbre.html', 'Arbre en arbre'),
+        Page('r2/pub_crawl.html', 'Pub Crawl'),
+        Page('r2/course.html', 'Course JDG'),
+        Page('r2/festival.html', 'Festival'),
 
     ]
     p.render()
