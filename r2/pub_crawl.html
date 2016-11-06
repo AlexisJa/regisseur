@@ -1,0 +1,61 @@
+<h2>Drinks out for Harambe!</h2>
+<p>
+    Plusieurs valeureux guerriers ont pris d'assaut le Vieux-Québec le 5 novembre dernier, armés de seuls leur courage,
+    leur foie et leur oseille. <br>
+    Certains avaient des examens à oublier, d'autres à célébrer, et certains n'avaient rien à perdre, vue l'imminence de
+    leur premier examen de SCL. <br>
+    Pour ceux qui ne s'en souviennent plus, ce qui est très louable, les bars étaient les suivants:
+    <ul>
+        Rideau Rouge
+    </ul>
+    <ul>
+        Bateau de Nuit
+    </ul>
+    <ul>
+        Sacrilège
+    </ul>
+    <ul>
+        Ozone
+    </ul>
+    <ul>
+        Inox
+    </ul>
+    <ul>
+        Nelligan
+    </ul>
+    <ul>
+        Ninkasi
+    </ul>
+    Mais bien sur, ce n'était pas assez pour certains, qui s'écartant des sentiers battus, ont également fait des arrêts
+    au Galway, au Sul'Side et au Scanner. GG WP.
+</p>
+
+<div ng-controller="CarouselCtrl" ng-init="init('https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/pub_crawl/',
+[
+], 30)">
+    <div id="CarouselInitiation" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+
+      <ol class="carousel-indicators">
+        <li ng-repeat="photo in photos" data-target="#CarouselInitiation" data-slide-to="{{ $index }}" ng-class="$index==0 ? 'active' : ''"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+          <div class="item" ng-repeat="photo in photos" ng-class="$index==0 ? 'active' : ''">
+                <img ng-src="{{ photo.src }}" ng-alt="photo.caption">
+            <div class="carousel-caption">
+                <p>{{ photo.caption }}</p>
+            </div>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#CarouselInitiation" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#CarouselInitiation" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>

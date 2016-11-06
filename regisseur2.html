@@ -129,7 +129,7 @@ ng_reg.controller('CarouselCtrl', function($scope){
     };
     $scope.init = function(location, caption_dict, pic_number){
         $scope.photos = [];
-        for (var i = 1; i<pic_number; i++){
+        for (var i = 1; i<=pic_number; i++){
             var caption = '';
             $scope.photos.push({src: location + i+'.jpg', caption: caption});
         }
@@ -148,9 +148,9 @@ ng_reg.controller('CarouselCtrl', function($scope){
             </div>
         </div>
         <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
-        <ul class="nav navbar-nav"><li><a href="#section0">Attention!</a></li><li><a href="#section1">VP première année</a></li><li><a href="#section2">Waurte du mois</a></li><li><a href="#section3">Règles du Smash</a></li><li><a href="#section4">Éditorial</a></li><li><a href="#section5">Poésie</a></li><li><a href="#section6">Arbre en arbre</a></li><li><a href="#section7">Pub Crawl</a></li><li><a href="#section8">Course JDG</a></li><li><a href="#section9">Festival</a></li></ul></nav>
+        <ul class="nav navbar-nav"><li><a href="#section0">Santé publique</a></li><li><a href="#section1">VP première année</a></li><li><a href="#section2">Waurte du mois</a></li><li><a href="#section3">Dictionnaire du Smash</a></li><li><a href="#section4">Éditorial</a></li><li><a href="#section5">Arbre en arbre</a></li><li><a href="#section6">Pub Crawl</a></li><li><a href="#section7">Course JDG</a></li><li><a href="#section8">Festival</a></li></ul></nav>
 <div id="section0" class="container-fluid PageDiv">
-        <h2 class="pageTitle">Attention!</h2>
+        <h2 class="pageTitle">Santé publique</h2>
         <h3>
     ATTENTION! ANNONCE DE SANTÉ PUBLIQUE!
 </h3>
@@ -179,7 +179,7 @@ ng_reg.controller('CarouselCtrl', function($scope){
         <h2 class="pageTitle">VP première année</h2>
         Vous avez élu notre nouveau venu dans l'exécutif du RÉGIÉ: Marc-Alliocha Rudolf
 
-<h4><span class="face"><img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/marc.jpg"></span></h4>
+<h4><span class="roundImage"><img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/marc.jpg"></span></h4>
 
 <p>
     Salut guys ! Moi c'est Marc-Alliocha et je suis à ma première année de Génie Électrique (let's goo, reste juste 4 ou
@@ -199,8 +199,23 @@ ng_reg.controller('CarouselCtrl', function($scope){
 </p>
 </div><div id="section2" class="container-fluid PageDiv">
         <h2 class="pageTitle">Waurte du mois</h2>
-        </div><div id="section3" class="container-fluid PageDiv">
-        <h2 class="pageTitle">Règles du Smash</h2>
+        Le waurte du mois revient à Rémi Courtemanche, Guillaume Boulisse et Emile Bourque qui ont su monter le mont Katahdin,
+dans l'État du Maine. En réalisant cet exploit, ils ont pu prouver plusieurs choses:
+<li>
+    Notre drapeau peut peut avoir une utilité
+</li>
+<li>
+    Les GELGIF peuvent faire de grandes choses quand ils ne sont pas en train de gamer
+</li>
+<li>
+    Les GELGIF sont capables de monter des grosses
+</li>
+<div align="center">
+    <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/waurte.jpg" style="max-width: 1150px">
+</div>
+
+Félicitations!</div><div id="section3" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Dictionnaire du Smash</h2>
         <i>Les paroles s'envolent, les écrits restent</i> - Mohamed Ali, 1736
 <p>
 	Comme Smash reste très populaire parmi les membres du RÉGIÉ, toute génération confondue, il est important de
@@ -270,18 +285,98 @@ ng_reg.controller('CarouselCtrl', function($scope){
 </ul>
 </div><div id="section4" class="container-fluid PageDiv">
         <h2 class="pageTitle">Éditorial</h2>
-        </div><div id="section5" class="container-fluid PageDiv">
-        <h2 class="pageTitle">Poésie</h2>
-        </div><div id="section6" class="container-fluid PageDiv">
+        <p>
+    <i>Les propos tenus dans cette section ne réflètent en aucun cas les positions officielles du RÉGIÉ</i>
+</p>
+<p>
+    Parmi tous les débats de société qui se déroulent en ce moment, il y en a un qui touche particulièrement la jeunesse:
+    La proposition d'augmenter les salaires minimum à 15$ par heure. Lorsque questionné sur sa position en la matière,
+    le comité exécutif du RÉGIÉ a décidé de s'abstenir à appuyer ou non cette proposition.
+</p>
+<div align="center">
+    <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/editorial.jpg" style="max-width: 1150px">
+</div>
+<p>
+    Les arguments du pour et du contre sont très nombreux et considérables, mais l'équipe de rédaction du Régisseur a
+    considéré principalement la qualité de vie des étudiants en GELGIF, et a donc décidé de se positionner <b>POUR</b>
+    l'augmentation des salaires minimum à 15$ par heure. <br>
+    Comme le clan du contre l'a si bien démontré, une hausse aussi précipitée des salaires pousserait plusieurs entreprises
+    à remplacer des emplois peu rénumérés par des ordinateurs ou des machines. Cela créerait des opportunités d'emploi
+    incroyables pour nous, futurs ingénieurs. <br>
+    Supportons donc le mouvement social pour l'augmentation des salaires minimum, et, ensemble, nous pourrons nous trouver
+    des meilleurs emplois sur leur dos!
+</p></div><div id="section5" class="container-fluid PageDiv">
         <h2 class="pageTitle">Arbre en arbre</h2>
         <p> Notre valeureux VP-Sports nous a organisé une belle sortie de famille à Sarbayä.
     On s'est fait des bras, on a sué dans la pluie, on a eu du plasir, et on a eu de la bière gratis à la Voie Maltée.
     Merci Jay! <span class="glyphicon glyphicon-heart"></span>
 </p>
-<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/tree.jpg" style="max-width: 1000px" align="center">
-</div><div id="section7" class="container-fluid PageDiv">
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/tree.jpg" style="max-width: 1000px">
+</div></div><div id="section6" class="container-fluid PageDiv">
         <h2 class="pageTitle">Pub Crawl</h2>
-        </div><div id="section8" class="container-fluid PageDiv">
+        <h2>Drinks out for Harambe!</h2>
+<p>
+    Plusieurs valeureux guerriers ont pris d'assaut le Vieux-Québec le 5 novembre dernier, armés de seuls leur courage,
+    leur foie et leur oseille. <br>
+    Certains avaient des examens à oublier, d'autres à célébrer, et certains n'avaient rien à perdre, vue l'imminence de
+    leur premier examen de SCL. <br>
+    Pour ceux qui ne s'en souviennent plus, ce qui est très louable, les bars étaient les suivants:
+    <ul>
+        Rideau Rouge
+    </ul>
+    <ul>
+        Bateau de Nuit
+    </ul>
+    <ul>
+        Sacrilège
+    </ul>
+    <ul>
+        Ozone
+    </ul>
+    <ul>
+        Inox
+    </ul>
+    <ul>
+        Nelligan
+    </ul>
+    <ul>
+        Ninkasi
+    </ul>
+    Mais bien sur, ce n'était pas assez pour certains, qui s'écartant des sentiers battus, ont également fait des arrêts
+    au Galway, au Sul'Side et au Scanner. GG WP.
+</p>
+
+<div ng-controller="CarouselCtrl" ng-init="init('https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/pub_crawl/',
+[
+], 30)">
+    <div id="CarouselInitiation" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+
+      <ol class="carousel-indicators">
+        <li ng-repeat="photo in photos" data-target="#CarouselInitiation" data-slide-to="{{ $index }}" ng-class="$index==0 ? 'active' : ''"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+          <div class="item" ng-repeat="photo in photos" ng-class="$index==0 ? 'active' : ''">
+                <img ng-src="{{ photo.src }}" ng-alt="photo.caption">
+            <div class="carousel-caption">
+                <p>{{ photo.caption }}</p>
+            </div>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#CarouselInitiation" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#CarouselInitiation" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+</div><div id="section7" class="container-fluid PageDiv">
         <h2 class="pageTitle">Course JDG</h2>
         <p>
     Ouch. J'ai encore mal. <br>
@@ -291,8 +386,9 @@ ng_reg.controller('CarouselCtrl', function($scope){
     les bras, on souhaite tous vous revoir dans la course l'an prochain!
 
 </p>
-<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/course.jpg" style="max-width: 1150px" align="center">
-</div><div id="section9" class="container-fluid PageDiv">
+<div align="center">
+    <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r2/pics/course.jpg" style="max-width: 1150px">
+</div></div><div id="section8" class="container-fluid PageDiv">
         <h2 class="pageTitle">Festival</h2>
         <p>
     Très chers Gelgifois, <br>
