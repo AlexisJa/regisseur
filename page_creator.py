@@ -81,12 +81,11 @@ class PageCreator:
 if __name__ == '__main__':
     p = PageCreator()
     p.page_list = [
-        Page('r2/beignes.html', 'Attention!'),
+        Page('r2/beignes.html', 'Santé publique'),
         Page('r2/vp1.html', 'VP première année'),
         Page('r2/waurte.html', 'Waurte du mois'),
-        Page('r2/smash.html', 'Règles du Smash'),
+        Page('r2/smash.html', 'Dictionnaire du Smash'),
         Page('r2/editorial.html', 'Éditorial'),
-        Page('r2/poeme.html', 'Poésie'),
         Page('r2/arbre.html', 'Arbre en arbre'),
         Page('r2/pub_crawl.html', 'Pub Crawl'),
         Page('r2/course.html', 'Course JDG'),
