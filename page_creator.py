@@ -87,8 +87,8 @@ if __name__ == '__main__':
         Page('r2/smash.html', 'Dictionnaire du Smash'),
         Page('r2/editorial.html', 'Éditorial'),
         Page('r2/arbre.html', 'Arbre en arbre'),
-        Page('r2/pub_crawl.html', 'Pub Crawl'),
         Page('r2/course.html', 'Course JDG'),
+        Page('r2/pub_crawl.html', 'Pub Crawl'),
         Page('r2/festival.html', 'Festival'),
 
     ]
