@@ -8,7 +8,7 @@ ng_reg.controller('CarouselCtrl', function($scope){
     $scope.init = function(location, caption_dict, pic_number){
         $scope.photos = [];
         for (var i = 1; i<=pic_number; i++){
-            var caption = '';
+            var caption = caption_dict[i];
             $scope.photos.push({src: location + i+'.jpg', caption: caption});
         }
     }
