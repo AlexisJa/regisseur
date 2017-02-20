@@ -35,8 +35,8 @@ class Page:
 
 class PageCreator:
     def __init__(self, *args, **kwargs):
-        self.volume = 2
-        self.date = "Mi-session automne 2016"
+        self.volume = 3
+        self.date = "Mi-session hiver 2017"
         self.output_file = 'regisseur{}.html'.format(self.volume)
         self.title_div = ''
         self.body = ''
@@ -81,15 +81,13 @@ class PageCreator:
 if __name__ == '__main__':
     p = PageCreator()
     p.page_list = [
-        Page('r2/beignes.html', 'Santé publique'),
-        Page('r2/vp1.html', 'VP première année'),
-        Page('r2/waurte.html', 'Waurte du mois'),
-        Page('r2/smash.html', 'Dictionnaire du Smash'),
-        Page('r2/editorial.html', 'Éditorial'),
-        Page('r2/arbre.html', 'Arbre en arbre'),
-        Page('r2/course.html', 'Course JDG'),
-        Page('r2/pub_crawl.html', 'Pub Crawl'),
-        Page('r2/festival.html', 'Festival'),
+        Page('r3/intro.html', 'Intro'),
+        Page('r3/desjardins.html', 'Desjardins'),
+        Page('r3/jdg.html', 'Jeux de Génie'),
+        Page('r3/bnc.html', 'BNC'),
+        Page('r3/festival.html', 'Festival'),
+        Page('r3/cqi.html', 'CQI'),
+        Page('r3/trek.html', 'Trek'),
 
     ]
     p.render()
