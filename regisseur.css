@@ -23,6 +23,15 @@ body {
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
     background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/master/pic/circuit2.jpg");
 }
+.comptTable{
+    width:100%;
+    border:4;
+    /*background-color:pink;*/
+
+}
+.comptTable>tr{
+    /*width:33%;*/
+}
 .affix {
   top:0;
   width: 100%;
@@ -39,7 +48,7 @@ body {
 .PageDiv{
     max-width: 1200px;
     background-color: #eeeeee;
-    min-height: 500px;
+    min-height: 300px;
 }
 .PageDiv:nth-child(even){
     background-color: #dddddd;

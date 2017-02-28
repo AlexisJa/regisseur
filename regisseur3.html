@@ -35,6 +35,15 @@ body {
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
     background-image: url("https://cdn.rawgit.com/AlexisJa/regisseur/master/pic/circuit2.jpg");
 }
+.comptTable{
+    width:100%;
+    border:4;
+    /*background-color:pink;*/
+
+}
+.comptTable>tr{
+    /*width:33%;*/
+}
 .affix {
   top:0;
   width: 100%;
@@ -51,7 +60,7 @@ body {
 .PageDiv{
     max-width: 1200px;
     background-color: #eeeeee;
-    min-height: 500px;
+    min-height: 300px;
 }
 .PageDiv:nth-child(even){
     background-color: #dddddd;
@@ -148,25 +157,34 @@ ng_reg.controller('CarouselCtrl', function($scope){
             </div>
         </div>
         <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
-        <ul class="nav navbar-nav"><li><a href="#section0">Intro</a></li><li><a href="#section1"></a></li><li><a href="#section2">Jeux de G�nie</a></li><li><a href="#section3"></a></li><li><a href="#section4">Festival</a></li><li><a href="#section5">CQI</a></li><li><a href="#section6"></a></li></ul></nav>
+        <ul class="nav navbar-nav"><li><a href="#section0">Intro</a></li><li><a href="#section1">Pause Pub</a></li><li><a href="#section2">Jeux de G�nie</a></li><li><a href="#section3">Pause Pub</a></li><li><a href="#section4">Festival</a></li><li><a href="#section5">Pause Pub</a></li><li><a href="#section6">CQI</a></li><li><a href="#section7">Pause Pub</a></li><li><a href="#section8">Guerre des OS</a></li></ul></nav>
 <div id="section0" class="container-fluid PageDiv">
         <h2 class="pageTitle">Intro</h2>
         <p>
     Ah, la session d'hiver! Tellement de choses à faire! À travers le Festival, les partys de la Course HivernalE, la
     Poutine Week, les grèves, les Dérives, les offres de stage et d'emplois, très difficile de garder le cap et de
-    prendre le temps d'étudier... ou de faire un Régisseur! <br>
+    prendre le temps d'étudier... ou de faire un Régisseur! <br><br>
     Le voici le voilà, enfin, vous ne l'attendiez plus tellement vous aviez autre chose à faire, mais il va s'ajouter à
-    votre liste de procrastination. <br>
+    votre liste de procrastination. <br><br>
     Plusieurs étudiants GELGIF ont participé à plusieurs activités dans les derniers mois, on va revenir là-dessus pour
-    les féliciter, et pour encourager la relève à leur emboîter le pas. <br>
-    On lâche pas, il reste juste la moitié d'une session à cette année de fous! <br>
+    les féliciter, et pour encourager la relève à leur emboîter le pas. <br><br>
+    On lâche pas, il reste juste la moitié d'une session à cette année de fous! <br><br>
     PS. Je me suis fait chicaner parce que je n'ai pas mis de publicité des partenaires du RÉGIÉ dans les éditions
-    précédentes. Je vais me reprendre dans cette édition, que je surnommerais l'édition SUPERBOWL: À la dernière minute,
-    pleine de pubs, et source de baisse de productivité pour tout le monde!
+    précédentes. <br><br>
 </p></div><div id="section1" class="container-fluid PageDiv">
-        <h2 class="pageTitle"></h2>
+        <h2 class="pageTitle">Pause Pub</h2>
         <div align="center">
 <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/DESJARDINS.png" style="max-width: 1000px">
+</div>
+<br><br>
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/BNC.png" style="max-width: 1000px">
+</div>
+<br><br>
+
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/TREK.png" style="max-width: 1000px;
+background-size: 100%">
 </div></div><div id="section2" class="container-fluid PageDiv">
         <h2 class="pageTitle">Jeux de G�nie</h2>
         <p>
@@ -176,36 +194,41 @@ ng_reg.controller('CarouselCtrl', function($scope){
 
 <div ng-controller="CarouselCtrl" ng-init="init('https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/jdg/',
 ['',
+'Goup gère',
+'',
+'Boulisse gère plus!',
+'La Machine la plus laide',
+'',
+'Les plus keunes',
 '',
 '',
 '',
 '',
+'Le Tchoukball',
+'Sport PisCena',
 '',
 '',
+'Première place en GIF!',
+'Génie en Herbe',
+'Rambo',
+'Reconnaissez-vous cet homme?',
+'',
+'Il est un peu émotif',
+'À peine',
+'Encore',
+'Quel homme.',
+'',
+'#PéterDesDents',
+'',
+'Cest quoi les chances que je couche avec la prochaine personne qui se pointe sur ce diaporama?',
+'1',
+'',
+
+'Guys, salade de fruits',
 '',
 '',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-'',
-], 31)">
+
+], 33)">
     <div id="Carousel0" class="carousel slide" data-ride="carousel" >
       <!-- Indicators -->
 
@@ -232,57 +255,54 @@ ng_reg.controller('CarouselCtrl', function($scope){
       </a>
     </div>
 </div>
-
+<br>
 Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici quelques SHOUT OUT:
-<ul>
+<li>
     Shout out à la première place à la compétition académique en Génie Informatique!
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Picard qui ne faisait pas partie de l'équipe de Génie Informatique!
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Notre Président Francis Quevillon qui essaye de diluer un drink de Tequila-Gatorade avec le Tequila-Gatorade de ses cochambreurs
-</ul>
-<ul>
+</li>
+<li>
     Shout out à la 2e meilleure shape
     qui a arrêté de servir à quoi que ce soit depuis les Jeux
-</ul>
-<ul>
-    Shout out à Camille et Boulisse qui étaient bien trop cute
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Picard de s'être fait lancer par-dessus-bord de son lit par Miguel le Terrible et qui s'est rendormi tout de suite après
-</ul>
-<ul>
+</li>
+<li>
     ShoutoutàmaspacebarquiaarrêtédefonctionnerpendantlesJeux
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Abi et à Charles pour leurs impros funnéééé
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Rambo de Polytechnique qui nous a enfin battu en finale de Génie en Herbe après 3 essais
-</ul>
-<ul>
+</li>
+<li>
     Shout out à la 2e shape qui a couru au Tchoukball
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Boulisse le meilleur goaler de Water Polo
-</ul>
-<ul>
+</li>
+<li>
     Shout out à la première place en Tchoukball
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Bouscotte qui a hypnotisé plusieurs madames avec ses pas de danse
-</ul>
-<ul>
+</li>
+<li>
     Shout out à tous ceux qui sont restés nous aider à faire la Machine, sincèrement merci
-</ul>
-<ul>
+</li>
+<li>
     Shout out à la machine qui pète des dents
-</ul>
-<ul>
+</li>
+<li>
     Shout out à Matthieu Sylvain qui devient émotif ;-;
-</ul>
+</li>
 <p>
     Maintenant, il faut se tourner vers l'avenir! L'exécutif de l'an prochain est sorti et il sera à très grande majorité
     gelgifoise. Continuez de mettre du hype, continuez de recruter autant de courseurs aux initiations, et pour ceux
@@ -291,12 +311,92 @@ Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici 
     reconquir le titre à la maison l'an prochain! <br>
     Lol jk, Honey Badger VII is gonna whip your ass!
 </p></div><div id="section3" class="container-fluid PageDiv">
-        <h2 class="pageTitle"></h2>
+        <h2 class="pageTitle">Pause Pub</h2>
         <div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/DESJARDINS.png" style="max-width: 1000px">
+</div>
+<br><br>
+<div align="center">
 <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/BNC.png" style="max-width: 1000px">
+</div>
+<br><br>
+
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/TREK.png" style="max-width: 1000px;
+background-size: 100%">
 </div></div><div id="section4" class="container-fluid PageDiv">
         <h2 class="pageTitle">Festival</h2>
-        </div><div id="section5" class="container-fluid PageDiv">
+        <br>
+<p>
+    C'était vraiment vraiment vraiment WAURTE. D'autres shout out sont de mise.
+</p>
+<li>
+    Shout out à notre belle statue, qui a maintenant été revalorisée en tant que sanctuaire pour girafes.
+</li>
+<div align="center">
+    <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/statue.png" style="max-width: 1000px">
+</div>
+<li>
+    Shout out à la participation féminine!!
+</li>
+<li>
+    Shout out à ceux qui se sont gelé le cul dehors!
+</li>
+<li>
+    Shout out à la table de Casino la plus <strike>lit</strike> waurte.
+</li>
+<li>
+    GROS shout out au vidéo! Vous avez rocké ça et le directeur continue de l'écouter avant de se coucher selon les rumeurs!
+</li>
+<br>
+
+<div align="center">
+    <iframe src="https://drive.google.com/file/d/0B1mS7ZV32CTVRGZjR2xWNjNmcmc/preview" width="800" height="450"></iframe>
+</div>
+<li>
+    Shout out à l'équipe de Génie en Herbe qui s'est rendue très loin malgré un taux d'autisme quasi-nul!
+</li>
+<li>
+    Shout out à Picard qui a survécu à Miguel et aux Festidiens sans merci!
+</li>
+<li>
+    Shout out à Gabrielle qui a fait du ca$h avec sa 5e place au concours académique
+</li>
+<li>
+    Shout out à Gigawatt pour ne pas avoir fini dernier au concours académique
+</li>
+<li>
+    Shout out à la réforme de l'éducation du Québec qui nous a offert ce genre «d'orthographe alternatif»:
+</li>
+<div align="center">
+    <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/ortho.png" style="max-width: 1000px">
+</div>
+<li>
+    Shout out à tous ceux qui ont participé à l'impro, pour le meilleur et pour le pire
+</li>
+<li>
+    Shout out à la participation générale, des anciens mais aussi des nouveaux! C'est encourageant pour les prochaines années!
+</li>
+<li>
+    Shout out au Podium. C'est vraiment gros. Je suis immensément fier de vous!
+</li>
+<li>
+    Shout out à Emile qui a vraiment bien géré le tout et qui a été un VP-Festival hors pair!
+</li></div><div id="section5" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Pause Pub</h2>
+        <div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/DESJARDINS.png" style="max-width: 1000px">
+</div>
+<br><br>
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/BNC.png" style="max-width: 1000px">
+</div>
+<br><br>
+
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/TREK.png" style="max-width: 1000px;
+background-size: 100%">
+</div></div><div id="section6" class="container-fluid PageDiv">
         <h2 class="pageTitle">CQI</h2>
         <div align="center">
 <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/cqi.jpg" style="max-width: 1000px">
@@ -337,12 +437,12 @@ Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici 
     pour représenter le Québec: celui qui essuie son dégât de bière avec des dépliants de Bombardier dans la face des commanditaires,
     et celui qui s'est assis en kilt trop court à la table des juges/qui joue à flip Vodka avec les représentantes d'Hydro-Québec.
     Vraiment très à point pour représenter le Québec devant le reste du pays!
-    <ul>
+    <li>
         Shout out à l'équipe de conception junior (tous des GELGIF) qui ont fait un robot dont les seuls défis étaient mécaniques
-    </ul>
-    <ul>
+    </li>
+    <li>
         Shout out à l'équipe de conception senior (tous des GELGIF) qui ont fait le robot le moins cher, et ce, par plusieurs milliers de dollars.
-    </ul>
+    </li>
     La CQI, ce n'est pas juste une compétition, c'est aussi des rencontres. Nous avions la chance d'avoir dans le même
     hôtel un congrès de la FTQ, avec nul autre que Bernard Gauthier alias Rambo. Ce politicien très près des jeunes nous
     a ouvert les yeux sur une réalité qui nous touche tous en GELGIF: les compteurs intelligents. Il est de mon devoir
@@ -357,10 +457,61 @@ Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici 
     qu'il a compris que nous n'avons pas compris.
 </p>
 
-</div><div id="section6" class="container-fluid PageDiv">
-        <h2 class="pageTitle"></h2>
+</div><div id="section7" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Pause Pub</h2>
         <div align="center">
-<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/TREK.png" style="max-width: 1000px">
-</div></div>
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/DESJARDINS.png" style="max-width: 1000px">
+</div>
+<br><br>
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/BNC.png" style="max-width: 1000px">
+</div>
+<br><br>
+
+<div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/TREK.png" style="max-width: 1000px;
+background-size: 100%">
+</div></div><div id="section8" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Guerre des OS</h2>
+        <p>
+    Ça y est, c'est le moment que vous attendiez tous: La guerre des Systèmes d'Exploitation. Après cette chronique, il
+    n'y aura plus d'équivoque: Vous saurez quel OS est le meilleur. <br><br>
+    Premièrement, Windows perd par forfait. Au moment d'écrire ces lignes, il est 11h20 PM et Windows me dit de 4/20
+    Blaze It car il croit que je suis à Londres. Ça fait 2 ordis qui me font ça. Nuff' said. <br><br>
+    Non, nous allons plutôt comparer 2 OS sérieux qui sont des standards de l'industrie.
+</p>
+<div align="center">
+
+    <table class="comptTable">
+        <tr>
+            <th>
+                Catégorie
+            </th>
+            <th>
+                MAC OS X
+            </th>
+            <th>
+                HANNAH MONTANA Linux
+            </th>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/crap.png" style="max-width: 100%">
+            </td>
+            <td>
+                <img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/hannah.jpg" style="max-width: 100%">
+
+            </td>
+
+        </tr>
+
+    </table>
+</div>
+<br>
+Le meilleur OS est donc sans aucun doute HANNAH MONTANA Linux. <br>
+Voilà. C'est réglé. On arrête d'en parler.</div>
 </body>
 </html>
