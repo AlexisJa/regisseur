@@ -82,12 +82,12 @@ if __name__ == '__main__':
     p = PageCreator()
     p.page_list = [
         Page('r3/intro.html', 'Intro'),
-        Page('r3/desjardins.html', 'Desjardins'),
+        Page('r3/desjardins.html', ''),
         Page('r3/jdg.html', 'Jeux de Génie'),
-        Page('r3/bnc.html', 'BNC'),
+        Page('r3/bnc.html', ''),
         Page('r3/festival.html', 'Festival'),
         Page('r3/cqi.html', 'CQI'),
-        Page('r3/trek.html', 'Trek'),
+        Page('r3/trek.html', ''),
 
     ]
     p.render()

@@ -142,13 +142,13 @@ ng_reg.controller('CarouselCtrl', function($scope){
 
         <div class="container">
             <div class="jumbotron">
-                <h1>Régisseur</h1>
-                <h4>Le journal étudiant du Regroupement des Étudiants <br> de Génie Informatique et Électrique</h4>
-                <h5>Volume 3 - Édition Mi-session hiver 2017</h5>
+                <h1>R�gisseur</h1>
+                <h4>Le journal �tudiant du Regroupement des �tudiants <br> de G�nie Informatique et �lectrique</h4>
+                <h5>Volume 3 - �dition Mi-session hiver 2017</h5>
             </div>
         </div>
         <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
-        <ul class="nav navbar-nav"><li><a href="#section0">Intro</a></li><li><a href="#section1">Desjardins</a></li><li><a href="#section2">Jeux de Génie</a></li><li><a href="#section3">BNC</a></li><li><a href="#section4">Festival</a></li><li><a href="#section5">CQI</a></li><li><a href="#section6">Trek</a></li></ul></nav>
+        <ul class="nav navbar-nav"><li><a href="#section0">Intro</a></li><li><a href="#section1"></a></li><li><a href="#section2">Jeux de G�nie</a></li><li><a href="#section3"></a></li><li><a href="#section4">Festival</a></li><li><a href="#section5">CQI</a></li><li><a href="#section6"></a></li></ul></nav>
 <div id="section0" class="container-fluid PageDiv">
         <h2 class="pageTitle">Intro</h2>
         <p>
@@ -164,14 +164,74 @@ ng_reg.controller('CarouselCtrl', function($scope){
     précédentes. Je vais me reprendre dans cette édition, que je surnommerais l'édition SUPERBOWL: À la dernière minute,
     pleine de pubs, et source de baisse de productivité pour tout le monde!
 </p></div><div id="section1" class="container-fluid PageDiv">
-        <h2 class="pageTitle">Desjardins</h2>
-        </div><div id="section2" class="container-fluid PageDiv">
-        <h2 class="pageTitle">Jeux de Génie</h2>
+        <h2 class="pageTitle"></h2>
+        <div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/DESJARDINS.png" style="max-width: 1000px">
+</div></div><div id="section2" class="container-fluid PageDiv">
+        <h2 class="pageTitle">Jeux de G�nie</h2>
         <p>
     Que de plézir lors de ces derniers Jeux de Génie! Notre délégation de neuves était inarrêtable! Voici quelques
     photos de nos GELGIF à l'oeuvre!
 </p>
-AJOUTER PHOTOS
+
+<div ng-controller="CarouselCtrl" ng-init="init('https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/jdg/',
+['',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+'',
+], 31)">
+    <div id="Carousel0" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+
+      <ol class="carousel-indicators">
+        <li ng-repeat="photo in photos" data-target="#Carousel0" data-slide-to="{{ $index }}" ng-class="$index==0 ? 'active' : ''"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+          <div class="item" ng-repeat="photo in photos" ng-class="$index==0 ? 'active' : ''">
+                <img ng-src="{{ photo.src }}" ng-alt="photo.caption">
+            <div class="carousel-caption">
+                <p>{{ photo.caption }}</p>
+            </div>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#Carousel0" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#Carousel0" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
 
 Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici quelques SHOUT OUT:
 <ul>
@@ -188,7 +248,7 @@ Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici 
     qui a arrêté de servir à quoi que ce soit depuis les Jeux
 </ul>
 <ul>
-    Shout out à Camille et Boulisse qui étaient bien trop cute comme couple
+    Shout out à Camille et Boulisse qui étaient bien trop cute
 </ul>
 <ul>
     Shout out à Picard de s'être fait lancer par-dessus-bord de son lit par Miguel le Terrible et qui s'est rendormi tout de suite après
@@ -204,6 +264,9 @@ Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici 
 </ul>
 <ul>
     Shout out à la 2e shape qui a couru au Tchoukball
+</ul>
+<ul>
+    Shout out à Boulisse le meilleur goaler de Water Polo
 </ul>
 <ul>
     Shout out à la première place en Tchoukball
@@ -228,12 +291,19 @@ Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici 
     reconquir le titre à la maison l'an prochain! <br>
     Lol jk, Honey Badger VII is gonna whip your ass!
 </p></div><div id="section3" class="container-fluid PageDiv">
-        <h2 class="pageTitle">BNC</h2>
-        </div><div id="section4" class="container-fluid PageDiv">
+        <h2 class="pageTitle"></h2>
+        <div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/BNC.png" style="max-width: 1000px">
+</div></div><div id="section4" class="container-fluid PageDiv">
         <h2 class="pageTitle">Festival</h2>
         </div><div id="section5" class="container-fluid PageDiv">
         <h2 class="pageTitle">CQI</h2>
-        <p>
+        <div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/cqi.jpg" style="max-width: 1000px">
+</div>
+<br>
+
+<p>
     Pour ceuses qui ne savent pas c'est quoi la CQI, c'est la Compétition Québécoise d'Ingénierie. Chaque université
     québécoise (sauf l'UQAM mais c'est vraiment pas grave) envoie ceux qui ont gagné leur compétition locale (ou, comme
     ça arrive malheureusement trop souvent à Laval, la seule équipe qui s'est inscrite). Les catégories sont les suivantes:
@@ -288,7 +358,9 @@ Impossible de tout décrire ce qui s'est déroulé pendant ces Jeux, mais voici 
 </p>
 
 </div><div id="section6" class="container-fluid PageDiv">
-        <h2 class="pageTitle">Trek</h2>
-        </div>
+        <h2 class="pageTitle"></h2>
+        <div align="center">
+<img src="https://cdn.rawgit.com/AlexisJa/regisseur/master/r3/pics/TREK.png" style="max-width: 1000px">
+</div></div>
 </body>
 </html>
