@@ -1,4 +1,4 @@
-# coding=utf-8
+#coding=utf-8
 class NavBar:
     def __init__(self, date, volume):
         self.page_list = []
