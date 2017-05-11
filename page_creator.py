@@ -85,7 +85,7 @@ if __name__ == '__main__':
     p.page_list = [     # Dans cette liste, mettre toutes les pages selon leur folder, leur nom, et ajouter un titre
         Page('r4/intro.html', 'Intro'),
         Page('r4/desjardins.html', 'Desjardins'),
-        Page('r4/buck-o-thon.html', 'Buck-O-Thon'),
+        Page('r4/buck-o-thon.html', 'PT'),
         Page('r4/BNC.html', 'Banque Nationale'),
         Page('r4/vf.html', 'Vin et Fromage'),
         Page('r4/trek.html', 'Trek'),

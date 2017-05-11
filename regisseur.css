@@ -74,7 +74,7 @@ body {
     text-align: center;
 }
 .face>img{
-    height:100px;
+    height:150px;
     border-radius: 50%;
     border: 6px solid #dd0000;
     transition: 0.5s;
