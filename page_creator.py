@@ -91,7 +91,7 @@ if __name__ == '__main__':
         Page('r4/trek.html', 'Trek'),
         Page('r4/souper_bacc.html', 'Souper de bacc'),
         Page('r4/last_call.html', 'Last Call'),
+        Page('r4/editorial.html', 'Éditorial'),
         Page('r4/voyage.html', 'Voyage des finissants'),
-
     ]
     p.render()
