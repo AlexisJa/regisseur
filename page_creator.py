@@ -1,4 +1,6 @@
-#coding=utf-8
+# coding=utf-8
+
+
 class NavBar:
     def __init__(self, date, volume):
         self.page_list = []
@@ -34,8 +36,8 @@ class Page:
 
 
 class PageCreator:
-    def __init__(self, *args, **kwargs):
-        self.volume = 3
+    def __init__(self, volume, *args, **kwargs):
+        self.volume = volume
         self.date = "Mi-session hiver 2017"
         self.output_file = 'regisseur{}.html'.format(self.volume)
         self.title_div = ''
@@ -79,18 +81,17 @@ class PageCreator:
         )
 
 if __name__ == '__main__':
-    p = PageCreator()
-    p.page_list = [
-        Page('r3/intro.html', 'Intro'),
-        Page('r3/desjardins.html', 'Pause Pub'),
-        Page('r3/jdg.html', 'Jeux de Génie'),
-        Page('r3/desjardins.html', 'Pause Pub'),
-        Page('r3/festival.html', 'Festival'),
-        Page('r3/desjardins.html', 'Pause Pub'),
-        Page('r3/cqi.html', 'CQI'),
-        Page('r3/desjardins.html', 'Pause Pub'),
-        Page('r3/os_war.html', 'Guerre des OS'),
+    p = PageCreator(4)  # Mettre le volume en argument
+    p.page_list = [     # Dans cette liste, mettre toutes les pages selon leur folder, leur nom, et ajouter un titre
+        Page('r4/intro.html', 'Intro'),
+        Page('r4/desjardins.html', 'Desjardins'),
+        Page('r4/buck-o-thon.html', 'Buck-O-Thon'),
+        Page('r4/BNC.html', 'Banque Nationale'),
+        Page('r4/vf.html', 'Vin et Fromage'),
+        Page('r4/trek.html', 'Trek'),
+        Page('r4/souper_bacc.html', 'Souper de bacc'),
+        Page('r4/last_call.html', 'Last Call'),
+        Page('r4/voyage.html', 'Voyage des finissants'),
 
     ]
     p.render()
-    print('ready')
